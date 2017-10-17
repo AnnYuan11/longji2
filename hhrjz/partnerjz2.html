@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" name="viewport"/>
+	<title>合伙人机制2</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/bower_components/Swiper/dist/css/swiper.css"/>
+	<script src="../css/bower_components/jquery/dist/jquery.js"></script>
+	<script src="../css/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="../css/bower_components/Swiper/dist/js/swiper.js"></script>
+	<script src="http://cdn.bootcss.com/touchjs/0.2.14/touch.js"></script>
+</head>
+<body>
+	<div class="head">
+		<div class="zixun">
+			<img src="../images/资讯/抽屉.png" alt="" class="chouti">
+           <span>合伙人</span>
+		</div>
+	</div>
+	<div class="search">
+		<input type="text" class="search2 search2-pantner" placeholder="寻找合伙人">
+	</div>
+	<!-- 标题部分 -->
+	<div class="pat-title">
+	     <a href="../hhrqy/partnerqy.html" class="qiye-pat">企业合伙人</a>
+	     <a href="../hhrgr/partnergr.html" class="qiye-pat geren-pat">个人合伙人</a>
+	     <a href="../hhrjz/partnerjz.html" class="qiye-pat jizhi-pat pat-active">合伙人机制</a>
+	</div>
+	<div class="pat-jz">
+		<img src="../images/hehuorenjizhi/hhrjz.png" alt="" class="hhrjz">
+		<span class="jz">发展工程+合伙企业</span>
+	</div>
+	<div class="window">
+		<p class="content-jz">1. 每月发展工程+合伙企业1-3家，可获得1颗星，根据合伙企业性质：奖励500～1500元；
+		</p>
+		<p class="content-jz">2. 每月发展工程+合伙企业4-6家，可获得2颗星，根据合伙企业性质：奖励1600～2600元；
+		</p>
+		<p class="content-jz">3. 每月发展工程+合伙企业7-10家，可获得3颗星，根据合伙人数量：奖励2700～4200元；
+		</p>
+		<p class="content-jz">4. 每月发展工程+合伙企业11-14名，可获得4颗星，根据合伙人数量：奖励4300～5800元；
+		</p>
+		<p class="content-jz">5. 每月发展工程+合伙企业15-20名，可获得5颗星，根据合伙人数量：奖励5900～8400元。
+		</p>
+	</div>
+	    
+	<!-- 底部 -->
+	<div id="footer">
+		<ul class="footer">
+			<li class="li">
+				<a href="../index.html">
+					<img src="../images/底部/资讯.png" alt="">
+					<span>资讯</span>
+				</a>
+			</li>
+			<li class="li">
+				<a href="../xm/xiangmu2.html">
+					<img src="../images/底部/项目.png" alt="">
+					<span>项目</span>
+				</a>
+			</li>
+			<li class="li">
+				<a href="../hhrqy/partnerqy.html">
+					<img src="../images/底部/合伙人 in.png" alt="">
+					<span class="active">合伙人</span>
+				</a>
+			</li>
+			<li class="li">
+				<a href="../qyzx/qiyezhongxin.html">
+					<img src="../images/底部/我的 (2).png" alt="">
+					<span>我的</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 滚动条 -->
+	<img src="../images/hehuorenjizhi/gdt1.png" alt="" class="gdt1">
+	<img src="../images/hehuorenjizhi/gdt2.png" alt="" class="gdt2">
+	  <!-- 侧滑页 -->
+	<div class="hide">
+	  	<img src="../images/资讯/ce/ce(1).png" alt="" class="bg" id="cover-jz">
+	  	<img src="../images/资讯/ce/logo.png" alt="" class="zx-logo">
+	  	<a href="#">
+	  		<img src="../images/资讯/ce/关抽屉.png" alt="" class="chouti chouti-ce">
+	  	</a>
+	  	<div class="list2">
+	  		<a href="../hhrjz/partnerjz.html" class="active" id="first">
+	  			<img src="../images/hehuorenjizhi/ce/hhrjz.png" alt="" class="hat">
+	  			<span class="select">发展工程+合伙人</span>
+	  			<img src="../images/资讯/ce/分割线.png" alt="" class="fenge">
+	  		</a>
+	  		<a href="../hhrjz/partnerjz2.html">
+	  			<img src="../images/hehuorenjizhi/ce/hhrjz.png" alt="" class="hat">
+	  			<span class="select">发展工程+合伙企业</span>
+	  			<img src="../images/资讯/ce/分割线.png" alt="" class="fenge">
+	  		</a>
+	  		<a href="../hhrjz/partnerjz3.html">
+	  			<img src="../images/hehuorenjizhi/ce/hhrjz.png" alt="" class="hat">
+	  			<span class="select">推送项目信息</span>
+	  			<img src="../images/资讯/ce/分割线.png" alt="" class="fenge">
+	  		</a>
+	  	</div>
+	</div>
+</body>
+<script>
+	$(function(){
+		     $('.chouti').on('click',function(){
+		 	 $('.hide').css('display','block');
+		 	 return false;
+		 	})
+		     $('.chouti-ce').on('click',function(){
+		 	 $('.hide').css('display','none');
+		 	})
+		     $('.list2').on('click','a',function(){
+		     $('.list2 a').removeClass('active');	
+		     $(this).toggleClass('active');
+		   })
+	})
+</script>
+</html>

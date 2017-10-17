@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>项目内页</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/bower_components/Swiper/dist/css/swiper.css" />
+	<script src="../css/bower_components/jquery/dist/jquery.js"></script>
+	<script src="../css/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="../css/bower_components/Swiper/dist/js/swiper.js"></script>
+	<script src="http://cdn.bootcss.com/touchjs/0.2.14/touch.js"></script>
+</head>
+<body>
+	<div class="head">
+	    <a href="javascript:;"onclick="javascript:history.back(-1)"><img src="../images/项目列表/1.png" alt="" class="jian"></a>
+		<div class="zixun">
+           <span>项目</span>
+		</div>
+	</div>
+	<!-- 标题部分 -->
+	<div class="title-box">
+		<span class="title">万科企业股份有限公司</span>
+		<span class="date">2016.10.26 8:56</span><span class="type">土木工程</span>
+	</div>
+	<!-- 轮播 -->
+	<div class="box">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../images/资讯/lun/1.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="../images/资讯/lun/2.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="../images/资讯/lun/3.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="../images/资讯/lun/4.png" alt=""></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<!-- 正文 -->
+	<p class="content-ny">2015年12月6日万科A公告称，钜盛华及其一致行动人前海人寿保险合计持有公司A股股票2,211,038,918股，占公司现在总股本的20.008%，为公司第一大股东。自从1995年华润成为万科第一大股东之后，时隔20年，万科大股东第一次易主。
+    </p>
+    <p class="content-ny">住宅建筑本身可以因扎根于历史、尊重自然、或因其独特创意而让自身充溢着生命。我们看到，很久以前我们前辈留下的住宅到今天还在为我们提供着关于采光、通风、人居交流的设计灵感；在城市化进程中，人们也越来越重视保留更多“都市的记忆”，以便能够更好地领悟历史的沉积，让新的住宅建筑更多地获得与特定土地紧密关联的人文记忆的滋养。 因此万科人越来越以培育生命的心态满怀敬畏地精心建造每一栋住宅。</p>
+</body>
+<script>
+$(function(){
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop:true
+    });
+})
+</script>
+</html>

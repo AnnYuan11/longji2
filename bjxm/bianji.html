@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" name="viewport"/>
+	<title>编辑项目</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/bower_components/Swiper/dist/css/swiper.css"/>
+	<script src="../css/bower_components/jquery/dist/jquery.js"></script>
+	<script src="../css/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="../css/bower_components/Swiper/dist/js/swiper.js"></script>
+	<script src="http://cdn.bootcss.com/touchjs/0.2.14/touch.js"></script>
+</head>
+<body>
+	 <!-- 头部 -->
+	<div class="head">
+	    <a href="../xm/xiangmu2.html"><img src="../images/项目列表/1.png" alt="" class="jian"></a>
+		<div class="zixun">
+           <span>编辑项目</span>
+		</div>
+	</div>
+	<!-- 项目类型 -->
+	<div class="style">
+		<div class="top-xm">
+			<span class="style-xm">项目类型</span>
+			<div class="DivSelect">
+			<select id="mune"  class="SelectList"> 
+				<option>土木工程</option> 
+				<option>工程设计</option> 
+				<option>土木工程</option> 
+				<option>工程设计</option> 
+				<option>土木工程</option> 
+			</select>
+			</div>
+		</div>
+		<div class="bottom-xm">
+			<span class="style-xm">项目标题</span>
+			<div class="line-xm">
+               <input type="text" value="天使地下库结构" color="#333" onfocus="if(value=='天使地下库结构'){value=''}" onblur="if(value==''){value="天使地下库结构"}">
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- 项目描述 -->
+	<span class="describe-xm">项目描述</span>
+	<textarea name="" id="box"  rows="10%" maxlength="200"></textarea>
+	 <!-- 图片部分 -->
+	 <div class="xm-pic">
+	 	<div class="img"><img src="../images/pic/2.jpg" alt="" class="pic"></div>
+	 	<div class="img"><img src="../images/pic/3.jpg" alt="" class="pic"></div>
+	 	<div class="img"><img src="../images/pic/4.jpg" alt="" class="pic"></div>
+	 	<a href="../tpk/picture.html">
+	 		<img src="../images/qiyezhongxin/add.png" alt="" class="img">
+	 	</a>
+	 </div>
+	 <!-- 底部 -->
+	<div class="bot">
+		<a href=""><img src="../images/bianjixiangmu/bc.png" alt="" class="quxiao"></a>
+		<a href=""><img src="../images/bianjixiangmu/fb.png" alt="" class="queding"></a>
+	</div>
+	<!-- 弹出框部分 -->
+	 <div class="warning">
+	 	<span>是否保存已修改的项目?</span>
+	 	<img src="../images/bianjixiangmu/jg/fq.png" alt="" class="fq"> 
+	 	<img src="../images/bianjixiangmu/jg/bc.png" alt="" class="bc">
+	 </div>
+
+
+</div>
+</body>
+<script>
+	$(function(){
+		     $('.quxiao').on('click',function(){
+		 	 $('.warning').css('display','block');
+		 	 return false;
+		 	})
+		 $('.fq').on('click',function(){
+			$('.warning').css('display','none');
+		})
+		$('.bc').on('click',function(){
+			$('.warning').css('display','none');
+		})
+	})
+</script>
+</html>

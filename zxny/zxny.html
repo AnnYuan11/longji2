@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>咨询内页</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/bower_components/Swiper/dist/css/swiper.css" />
+	<script src="../css/bower_components/jquery/dist/jquery.js"></script>
+	<script src="../css/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="../css/bower_components/Swiper/dist/js/swiper.js"></script>
+	<script src="http://cdn.bootcss.com/touchjs/0.2.14/touch.js"></script>
+</head>
+<body>
+	<div class="head">
+	    <a href="javascript:;"onclick="javascript:history.back(-1)"><img src="../images/项目列表/1.png" alt="" class="jian"></a>
+		<div class="zixun">
+           <span>咨询</span>
+		</div>
+	</div>
+	<!-- 标题部分 -->
+	<div class="title-box">
+		<span class="title">天使一号地下车库结构</span>
+		<span class="date">2016.10.26 8:56</span><span class="type">土木工程</span>
+	</div>
+	<!-- 轮播 -->
+	<div class="box">
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../images/资讯/lun/1.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="../images/资讯/lun/2.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="../images/资讯/lun/3.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="../images/资讯/lun/4.png" alt=""></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<!-- 正文 -->
+	<p class="content-ny">万科1988年进入住宅行业，1993年将大众住宅开发确定为公司核心业务。至2007年末，万科全国市场占有率为2.1%，业务覆盖到以珠三角、长三角、环渤海三大城市经济圈为重点的二十九个城市。
+    </p>
+    <p class="content-ny">当年共销售住宅4.8万套，销售套数位居世界前茅，跻身全球最大的住宅企业行列。经过多年努力，万科逐渐确立了在住宅行业的竞争优势：“万科”成为行业第一个全国驰名商标，旗下“四季花城”、“城市花园”、“金色家园”等品牌得到各地消费者的接受和喜爱；公司研发的“情景花园洋房”是中国住宅行业第一个专利产品和第一项发明专利；公司物业服务通过全国首批ISO9002质量体系认证；公司创立的万客会是住宅行业的第一个客户关系组织。2007年，万科工厂化技术的研发和应用取得重要进展，位于东莞的住宅产业化基地正式投入运作，并被建设部授牌为“国家住宅产业化基地”，上海新里程项目20号、21号两栋工厂化住宅楼已向市场推出。同年，万科新开工住房中装修房的比例达到53.4%，这是公司倡导节能环保、践行社会责任的重要体现。</p>
+</body>
+<script>
+$(function(){
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        loop:true
+    });
+})
+</script>
+</html>
